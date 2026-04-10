@@ -1,0 +1,228 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bud Ecosystem — Data Schemas",
+  "description": "Canonical JSON schemas for species, interactions, layers, and scenarios.",
+
+  "species_schema": {
+    "type": "array",
+    "description": "Canonical species list for one ecosystem.",
+    "items": {
+      "type": "object",
+      "required": ["id", "scientific_name", "common_name", "taxa_group", "trophic_level"],
+      "properties": {
+        "id": { "type": "string", "description": "Unique identifier e.g. 'sp_001'" },
+        "scientific_name": { "type": "string", "description": "GBIF-harmonised binomial" },
+        "common_name": { "type": "string" },
+        "taxa_group": {
+          "type": "string",
+          "enum": ["mammal", "bird", "reptile", "amphibian", "fish", "invertebrate", "plant", "fungi", "bacteria", "other"]
+        },
+        "trophic_level": {
+          "type": "number",
+          "description": "Numeric trophic level (1 = producer, 2 = primary consumer, etc.)"
+        },
+        "trophic_role": {
+          "type": "string",
+          "enum": ["producer", "primary_consumer", "secondary_consumer", "apex_predator", "omnivore", "detritivore", "parasite", "host", "engineer"]
+        },
+        "body_size_g": { "type": "number", "description": "Mean adult body mass in grams" },
+        "mobility": {
+          "type": "string",
+          "enum": ["sessile", "low", "medium", "high", "migratory"]
+        },
+        "diet_breadth": {
+          "type": "string",
+          "enum": ["specialist", "generalist"],
+          "description": "Specialist = narrow diet, generalist = broad"
+        },
+        "habitat_dependence": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Habitat types this species requires e.g. ['closed_canopy', 'riparian']"
+        },
+        "reproductive_rate": {
+          "type": "string",
+          "enum": ["very_low", "low", "medium", "high", "very_high"]
+        },
+        "iucn_status": {
+          "type": "string",
+          "enum": ["LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD", "NE"]
+        },
+        "persistence_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Probability of persisting after losing one key interaction partner (0–1)"
+        },
+        "redundancy_factor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Degree to which other species can substitute this species' ecological role"
+        },
+        "recovery_potential": {
+          "type": "string",
+          "enum": ["very_low", "low", "medium", "high"],
+          "description": "How quickly the species can recover from population decline"
+        },
+        "keystone_candidate": {
+          "type": "boolean",
+          "description": "Whether literature identifies this as a potential keystone species"
+        },
+        "gbif_taxon_key": { "type": "integer" },
+        "iucn_id": { "type": "integer" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+
+  "interactions_schema": {
+    "type": "array",
+    "description": "Pairwise ecological interactions between species.",
+    "items": {
+      "type": "object",
+      "required": ["id", "source_species_id", "target_species_id", "interaction_type", "layer", "direction"],
+      "properties": {
+        "id": { "type": "string", "description": "Unique interaction ID e.g. 'int_042'" },
+        "source_species_id": { "type": "string", "description": "ID of species initiating the interaction" },
+        "target_species_id": { "type": "string", "description": "ID of species receiving the interaction" },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "predation", "herbivory", "omnivory",
+            "pollination", "seed_dispersal", "mycorrhizal",
+            "parasitism", "pathogen_host",
+            "habitat_facilitation", "nurse_plant", "ecosystem_engineering",
+            "competition", "amensalism",
+            "nutrient_mediation", "decomposition"
+          ]
+        },
+        "layer": {
+          "type": "string",
+          "enum": ["trophic", "mutualistic", "parasitic", "habitat", "dispersal", "competitive", "nutrient"]
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["directed", "undirected"],
+          "description": "directed = source affects target asymmetrically (e.g. predation)"
+        },
+        "effect_on_source": {
+          "type": "number",
+          "description": "Effect on source species fitness (-1 to +1)"
+        },
+        "effect_on_target": {
+          "type": "number",
+          "description": "Effect on target species fitness (-1 to +1)"
+        },
+        "strength": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Interaction strength (0 = negligible, 1 = obligate)"
+        },
+        "obligate": {
+          "type": "boolean",
+          "description": "If true, loss of this interaction causes near-certain decline of the dependent species"
+        },
+        "seasonality": {
+          "type": "string",
+          "enum": ["year_round", "seasonal", "episodic"],
+          "description": "Temporal pattern of the interaction"
+        },
+        "confidence_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence in this interaction based on data source quality (0–1)"
+        },
+        "data_source": { "type": "string", "description": "Database or publication this record comes from" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+
+  "layers_schema": {
+    "type": "array",
+    "description": "Layer definitions and metadata for the multilayer graph.",
+    "items": {
+      "type": "object",
+      "required": ["id", "name", "interaction_types", "colour_hex"],
+      "properties": {
+        "id": { "type": "string", "description": "Layer ID matching interactions.json 'layer' field" },
+        "name": { "type": "string", "description": "Human-readable layer name" },
+        "description": { "type": "string" },
+        "interaction_types": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "cascade_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How heavily this layer's disruptions propagate to other layers (0–1)"
+        },
+        "colour_hex": { "type": "string", "description": "UI display colour for this layer" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+
+  "scenarios_schema": {
+    "type": "array",
+    "description": "Disturbance and restoration scenario configurations.",
+    "items": {
+      "type": "object",
+      "required": ["id", "name", "type", "affected_species", "affected_layers"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "species_removal", "species_introduction",
+            "habitat_degradation", "habitat_restoration",
+            "drought", "fire", "disease_outbreak",
+            "pollution_stress", "fragmentation", "hydrological_alteration",
+            "climate_disturbance", "hunting_pressure"
+          ]
+        },
+        "description": { "type": "string" },
+        "affected_species": {
+          "type": "array",
+          "description": "Species IDs directly stressed by this scenario",
+          "items": {
+            "type": "object",
+            "properties": {
+              "species_id": { "type": "string" },
+              "stress_multiplier": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Reduction in persistence score (0 = no effect, 1 = removed)"
+              }
+            }
+          }
+        },
+        "affected_layers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "layer_id": { "type": "string" },
+              "interaction_strength_multiplier": {
+                "type": "number",
+                "description": "Scales interaction strength across this whole layer (e.g. 0.5 = 50% reduction)"
+              }
+            }
+          }
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["low", "moderate", "high", "catastrophic"]
+        },
+        "reversible": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

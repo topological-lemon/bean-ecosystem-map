@@ -1,0 +1,6 @@
+networkx>=3.2
+numpy>=1.26
+pandas>=2.1
+plotly>=5.18
+dash>=2.14
+requests>=2.31
