@@ -145,12 +145,20 @@ If you use this simulator in your research, please cite:
 
 ## Team
 
-- **[Your name]** — Architecture, data pipeline, front-end
-- **Travis [surname]** — Ecological model, literature grounding, cascade logic
+- **Jacinta May** — Architecture, data pipeline, front-end [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jacinta-may-quantum/)
+- **Travis Raheb-Mol** — Ecological model, literature grounding, cascade logic [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/travisraheb-mol/)
 
 ## Licence
 
-MIT — see `LICENSE`.
+The code in this repository is licensed under the MIT License — see `LICENSE`.
+
+The data, documentation, and research outputs (including `/data`, `/docs`, and `/research`) are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**Attribution is required for all use.** Any use, adaptation, derivative work, publication, or deployment of any part of this project must visibly credit:
+
+> Jacinta May & Travis Raheb-Mol, *Cascade Ecosystem Quantum Map* (2025), https://github.com/topological-lemon/bud-ecosystem-map
+
+This applies to academic publications, commercial tools, policy reports, presentations, and software that incorporates this work in whole or in part.
 
 ## References
 
