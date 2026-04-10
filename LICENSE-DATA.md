@@ -11,5 +11,5 @@ Full licence text: https://creativecommons.org/licenses/by/4.0/
 Any use, adaptation, derivative work, publication, or deployment must
 visibly credit:
 
-> Jacinta May & Travis Raheb, *Bud Ecosystem Quantum Map* (2025),
-> https://github.com/YOUR-HANDLE/bud-ecosystem-map
+> Jacinta May & Travis Raheb-Mol, *Bean Ecosystem Quantum Map* (2025),
+> https://github.com/topological-lemon/bean-ecosystem-map
