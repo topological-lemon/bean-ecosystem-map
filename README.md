@@ -32,8 +32,8 @@ This simulator makes those hidden dependencies visible, interactive, and quantif
 ## Quick start
 
 ```bash
-git clone https://github.com/[your-handle]/bud-ecosystem-map.git
-cd bud-ecosystem-map
+git clone https://github.com/topological-lemon/bean-ecosystem-map.git
+cd bean-ecosystem-map
 pip install -r requirements.txt
 python simulator/app.py
 ```
@@ -43,7 +43,7 @@ Open `http://localhost:8050` in your browser.
 ## Project structure
 
 ```
-bud-ecosystem-map/
+bean-ecosystem-map/
 ├── data/
 │   ├── raw/                  # Source datasets (GBIF, GloBI, IUCN)
 │   └── processed/            # Harmonised JSON data files
