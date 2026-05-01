@@ -1,0 +1,56 @@
+action,source_scientific_name,target_scientific_name,layer,interaction_type,strength,evidence,doi_or_url,notes
+# ============================================================================
+# Curated overlays on top of GloBI base layer.
+#
+# Job of this file (post-pivot):
+#   (a) ADD interactions GloBI cannot supply — functional-group nodes that
+#       aren't real GloBI taxa, or Sabangau-specific records from grey lit.
+#   (b) OVERRIDE GloBI defaults where we have quantitative evidence.
+#   (c) EXCLUDE spurious GloBI records (e.g. captive-study leakage).
+#
+# All entries below are action=add at first cut. After the first run of
+# globi_fetch + globi_filter, audit and convert to override where collisions
+# show up, and add exclude rows for any garbage GloBI surfaces.
+#
+# action = add | override | exclude
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# (a) Functional-group nodes — not species-level GloBI entries
+# ----------------------------------------------------------------------------
+# Obligate fig - fig wasp mutualism. Removal of either side causes total
+# reproductive failure of both; this is the strongest mutualism in the network.
+add,Ceratosolen spp.,Ficus stupenda,mutualism_pollination,obligate_pollinates,1.0,bronstein_1989_fig_wasp_obligate,https://doi.org/10.1126/science.245.4922.1228,Functional-group node; not in GloBI taxonomy. Each Ficus species has a co-evolved Ceratosolen pollinator.
+add,Ceratosolen spp.,Ficus benjamina,mutualism_pollination,obligate_pollinates,1.0,bronstein_1989_fig_wasp_obligate,https://doi.org/10.1126/science.245.4922.1228,Functional-group node; obligate fig-fig wasp mutualism.
+add,Ceratosolen spp.,Ficus albipila,mutualism_pollination,obligate_pollinates,1.0,bronstein_1989_fig_wasp_obligate,https://doi.org/10.1126/science.245.4922.1228,Functional-group node; obligate fig-fig wasp mutualism.
+
+# Mycorrhizal facilitation. Dipterocarpaceae and other peat-swamp canopy trees
+# are obligately ectomycorrhizal in nutrient-poor peat substrate.
+add,Mycorrhizal community,Shorea balangeran,facilitation,enables_seedling_establishment,0.95,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Dipterocarp seedling establishment fails without compatible fungal partners.
+add,Mycorrhizal community,Gonystylus bancanus,facilitation,enables_seedling_establishment,0.9,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Ramin nutrient uptake in nutrient-poor peat depends on mycorrhizal associations.
+add,Mycorrhizal community,Tetramerista glabra,facilitation,enables_seedling_establishment,0.8,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Established peat-swamp forest mycorrhizal pattern.
+add,Mycorrhizal community,Combretocarpus rotundatus,facilitation,enables_seedling_establishment,0.8,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Tumih mycorrhizal dependence in nutrient-poor peat.
+add,Mycorrhizal community,Dyera lowii,facilitation,enables_seedling_establishment,0.7,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Jelutong mycorrhizal facilitation.
+add,Mycorrhizal community,Palaquium leiocarpum,facilitation,enables_seedling_establishment,0.7,brearley_2007_dipterocarp_mycorrhiza,https://doi.org/10.1007/s00572-006-0093-2,Functional-group node. Sapotaceae mycorrhizal associations.
+
+# ----------------------------------------------------------------------------
+# (b) Tarszisz 2018/2017 quantitative orangutan dispersal kernels
+#     Not indexed by GloBI; we have actual numbers (kernel size, gut transit
+#     time, viability) so these should not fall back to GloBI's flat default.
+#     If GloBI does surface a Pongo->Ficus dispersal record on first run,
+#     convert these to action=override.
+# ----------------------------------------------------------------------------
+add,Pongo pygmaeus wurmbii,Ficus stupenda,mutualism_dispersal,seeds_dispersed_by,0.85,tarszisz_2018_seed_dispersal_model,https://doi.org/10.1093/conphys/coy013,Quantitative dispersal kernel ~52ha (female) ~17ha (male); gut transit 70-86h; mean dispersal distance ~250m. Tarszisz 2017 confirms intact viable seeds in faeces.
+add,Pongo pygmaeus wurmbii,Ficus benjamina,mutualism_dispersal,seeds_dispersed_by,0.8,tarszisz_2018_seed_dispersal_model,https://doi.org/10.1093/conphys/coy013,Same quantitative dispersal kernel applies.
+add,Pongo pygmaeus wurmbii,Ficus albipila,mutualism_dispersal,seeds_dispersed_by,0.8,tarszisz_2018_seed_dispersal_model,https://doi.org/10.1093/conphys/coy013,Same quantitative dispersal kernel applies.
+add,Pongo pygmaeus wurmbii,Palaquium leiocarpum,mutualism_dispersal,seeds_dispersed_by,0.65,tarszisz_2017_germination_success,https://doi.org/10.1111/bij.12881,Tarszisz 2017 confirms gut-passed seeds remain viable; Palaquium documented in faecal seed list.
+add,Pongo pygmaeus wurmbii,Diospyros bantamensis,mutualism_dispersal,seeds_dispersed_by,0.55,tarszisz_2017_germination_success,https://doi.org/10.1111/bij.12881,Diospyros seeds in orangutan faeces with retained viability.
+add,Pongo pygmaeus wurmbii,Tetramerista glabra,mutualism_dispersal,seeds_dispersed_by,0.55,tarszisz_2017_germination_success,https://doi.org/10.1111/bij.12881,Punak seeds dispersed by orangutans; large-seeded peat tree.
+
+# ----------------------------------------------------------------------------
+# (c) Sabangau-specific habitat facilitation (Morrogh-Bernard 2009 PhD)
+#     Orangutan nest-tree preferences are reported in this dissertation but
+#     not, to our knowledge, indexed by GloBI as a facilitation record.
+# ----------------------------------------------------------------------------
+add,Combretocarpus rotundatus,Pongo pygmaeus wurmbii,facilitation,provides_nest_site,0.6,morrogh_bernard_2009_phd,https://www.borneonaturefoundation.org/wp-content/uploads/2016/02/Helen-C.-Morrogh-Bernard-2009-Orang-utan-Behavioural-Ecology-in-the-Sabangau-Peat-Swamp-Forest-Borneo-PhD.pdf,Tumih is a frequent nest tree for orangutans in Sabangau; structural habitat role.
+add,Shorea balangeran,Pongo pygmaeus wurmbii,facilitation,provides_nest_site,0.5,morrogh_bernard_2009_phd,https://www.borneonaturefoundation.org/wp-content/uploads/2016/02/Helen-C.-Morrogh-Bernard-2009-Orang-utan-Behavioural-Ecology-in-the-Sabangau-Peat-Swamp-Forest-Borneo-PhD.pdf,Balangeran among preferred nest tree species in Sabangau peat-swamp.
