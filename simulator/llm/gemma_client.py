@@ -44,7 +44,7 @@ def generate(prompt, system=None, temperature=0.7, max_tokens=1024):
     r = requests.post(
         f"{OLLAMA_HOST}/api/generate",
         json=payload,
-        timeout=300,
+        timeout=600,
     )
     r.raise_for_status()
     return r.json()["response"]

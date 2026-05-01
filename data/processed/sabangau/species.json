@@ -276,13 +276,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.78,
-    "redundancy_factor": 0.45,
+    "persistence_score": 0.45,
+    "redundancy_factor": 0.3,
     "recovery_potential": "high",
     "keystone_candidate": true,
     "iucn_status": "LC",
     "gbif_taxon_key": 5570129,
-    "notes": "Sabangau roster v1. GBIF match confidence: 98%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 98%.",
+    "calibration_notes": "Obligate Ceratosolen pollination + limited disperser set; double-obligate vulnerability"
   },
   {
     "id": "sp_020",
@@ -291,13 +292,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.78,
-    "redundancy_factor": 0.45,
+    "persistence_score": 0.55,
+    "redundancy_factor": 0.3,
     "recovery_potential": "high",
     "keystone_candidate": true,
     "iucn_status": "LC",
     "gbif_taxon_key": 5361932,
-    "notes": "Sabangau roster v1. GBIF match confidence: 97%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 97%.",
+    "calibration_notes": "Obligate Ceratosolen pollination; more dispersal redundancy than congeners"
   },
   {
     "id": "sp_021",
@@ -306,13 +308,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.78,
-    "redundancy_factor": 0.45,
+    "persistence_score": 0.45,
+    "redundancy_factor": 0.3,
     "recovery_potential": "high",
     "keystone_candidate": true,
     "iucn_status": "NE",
     "gbif_taxon_key": 7262874,
-    "notes": "Sabangau roster v1. GBIF match confidence: 99%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 99%.",
+    "calibration_notes": "Obligate Ceratosolen pollination + limited disperser set"
   },
   {
     "id": "sp_022",
@@ -321,13 +324,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.6,
-    "redundancy_factor": 0.45,
+    "persistence_score": 0.45,
+    "redundancy_factor": 0.3,
     "recovery_potential": "high",
     "keystone_candidate": true,
     "iucn_status": "EN",
     "gbif_taxon_key": 4097450,
-    "notes": "Sabangau roster v1. GBIF match confidence: 98%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 98%.",
+    "calibration_notes": "Dipterocarp obligate ectomycorrhiza; gravity/wind dispersal limited"
   },
   {
     "id": "sp_023",
@@ -336,13 +340,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.6,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.4,
+    "redundancy_factor": 0.2,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "CR",
     "gbif_taxon_key": 3568838,
-    "notes": "Sabangau roster v1. GBIF match confidence: 97%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 97%.",
+    "calibration_notes": "CR ramin; obligate mycorrhiza + Apis dorsata pollination"
   },
   {
     "id": "sp_024",
@@ -351,13 +356,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.78,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.55,
+    "redundancy_factor": 0.35,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "VU",
     "gbif_taxon_key": 3620034,
-    "notes": "Sabangau roster v1. GBIF match confidence: 98%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 98%.",
+    "calibration_notes": "Jelutong; canopy emergent with Apis dorsata pollination dependency"
   },
   {
     "id": "sp_025",
@@ -366,13 +372,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.78,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.55,
+    "redundancy_factor": 0.3,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "VU",
     "gbif_taxon_key": 3658134,
-    "notes": "Sabangau roster v1. GBIF match confidence: 99%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 99%.",
+    "calibration_notes": "Tumih; mycorrhizal-obligate, key nest tree"
   },
   {
     "id": "sp_026",
@@ -381,13 +388,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.88,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.55,
+    "redundancy_factor": 0.35,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "NE",
     "gbif_taxon_key": 2886727,
-    "notes": "Sabangau roster v1. GBIF match confidence: 99%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 99%.",
+    "calibration_notes": "Sapotaceae peat-swamp specialist"
   },
   {
     "id": "sp_027",
@@ -396,8 +404,8 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.88,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.6,
+    "redundancy_factor": 0.4,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "NE",
@@ -411,13 +419,14 @@
     "taxa_group": "plant",
     "trophic_level": 1.0,
     "trophic_role": "producer",
-    "persistence_score": 0.88,
-    "redundancy_factor": 0.55,
+    "persistence_score": 0.55,
+    "redundancy_factor": 0.35,
     "recovery_potential": "high",
     "keystone_candidate": false,
     "iucn_status": "LC",
     "gbif_taxon_key": 3593837,
-    "notes": "Sabangau roster v1. GBIF match confidence: 99%."
+    "notes": "Sabangau roster v1. GBIF match confidence: 99%.",
+    "calibration_notes": "Punak; limited dispersers, mycorrhizal-dependent"
   },
   {
     "id": "sp_029",

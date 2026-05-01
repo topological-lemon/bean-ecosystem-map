@@ -1,0 +1,30 @@
+[
+  {
+    "id": "trophic",
+    "name": "Trophic",
+    "description": "Predator-prey, herbivory, and frugivory interactions. Who eats whom.",
+    "color": "#c45a4f",
+    "weight": 1.0
+  },
+  {
+    "id": "mutualism_dispersal",
+    "name": "Seed Dispersal",
+    "description": "Animal-mediated seed dispersal. The keystone story for orangutans, hornbills, gibbons, and flying foxes.",
+    "color": "#2d8c4f",
+    "weight": 1.5
+  },
+  {
+    "id": "mutualism_pollination",
+    "name": "Pollination",
+    "description": "Pollinator-plant mutualism, including the obligate Ceratosolen-fig wasp partnership.",
+    "color": "#e2a93b",
+    "weight": 1.3
+  },
+  {
+    "id": "facilitation",
+    "name": "Habitat Facilitation",
+    "description": "Mycorrhizal seedling establishment, nest tree provision, and hornbill cavity nesting.",
+    "color": "#5a7ec4",
+    "weight": 1.1
+  }
+]

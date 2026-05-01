@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 *:Zone.Identifier
+*.bak
+*.bak2
+*.bak3

@@ -318,15 +318,24 @@ class CascadeSimulator:
                 if stress == 0:
                     continue
 
-                # Redundancy buffering reduces effective stress
-                buffered_stress = stress * (1 - species.redundancy_factor)
+                # Redundancy buffering: square-rooted so high-redundancy
+                # species are still vulnerable when stress is severe
+                # (linear formulation made keystone-dependent species
+                # implausibly resistant).
+                buffered_stress = stress * (1 - species.redundancy_factor ** 0.5)
 
-                # Extinction probability
-                ext_prob = buffered_stress * (1 - species.persistence_score)
+                # Extinction probability: square-rooted persistence response
+                # for the same reason — gives biologically realistic
+                # extinction frequencies under maximum stress.
+                ext_prob = buffered_stress * ((1 - species.persistence_score) ** 0.5)
 
-                # Recovery potential dampens extinction probability
-                recovery_mult = self.RECOVERY_MULTIPLIERS.get(species.recovery_potential, 0.5)
-                ext_prob *= (1 - recovery_mult * 0.3)
+                # Recovery potential dampens extinction probability,
+                # but only on cascade steps after the first. Recovery_potential
+                # describes whether species rebound from disturbance over time,
+                # not whether they survive the initial loss of partners.
+                if step_n > 0:
+                    recovery_mult = self.RECOVERY_MULTIPLIERS.get(species.recovery_potential, 0.5)
+                    ext_prob *= (1 - recovery_mult * 0.3)
 
                 if self.rng.random() < ext_prob:
                     newly_extinct.add(sp_id)
@@ -363,13 +372,48 @@ class CascadeSimulator:
 
             for source, _, data in in_edges:
                 if source in extinct:
+                    # Only positive-effect partners contribute to stress
+                    # when lost. A plant losing its disperser is stressed;
+                    # losing its herbivore/seed-predator is not.
+                    effect = data.get("effect_on_target", "positive")
+                    if effect == "negative":
+                        continue
                     strength = data.get("strength", 0.5)
                     obligate_mult = 2.0 if data.get("obligate", False) else 1.0
-                    total_stress += strength * obligate_mult * cw
+                    # Square-root the per-partner contribution: losing the
+                    # largest partner should dominate the signal rather than
+                    # being diluted by smaller partners.
+                    total_stress += (strength * obligate_mult * cw) ** 0.5
 
-        # Normalise by theoretical maximum stress
-        max_possible = max(1.0, len(self.graph.species) * 0.5)
-        return min(1.0, total_stress / max_possible)
+        # Normalise by this species' own incoming-edge capacity
+        # (sum of all incoming strengths across all layers).
+        # This makes the loss of a single keystone partner read as
+        # high stress in proportion to that species' total support network.
+        max_possible = 0.0
+        for layer_id, g in (
+            list(self.graph.layers.items()) if multilayer
+            else [("_mono", self.graph.flatten_to_monolayer())]
+        ):
+            if species_id not in g:
+                continue
+            cw = self.graph.layer_metadata.get(layer_id, {}).get("cascade_weight", 1.0)
+            for _, _, data in g.in_edges(species_id, data=True):
+                # Mirror the stress filter: only positive-effect edges
+                # contribute to the support-network capacity for normalisation.
+                effect = data.get("effect_on_target", "positive")
+                if effect == "negative":
+                    continue
+                strength = data.get("strength", 0.5)
+                obligate_mult = 2.0 if data.get("obligate", False) else 1.0
+                max_possible += strength * obligate_mult * cw
+
+        # Sqrt-normalised: matches the sqrt sum of contributions above.
+        # This keeps the [0, 1] range while rewarding loss of high-strength
+        # partners more than loss of an equivalent number of weak partners.
+        if max_possible < 0.01:
+            return 0.0
+        sqrt_max_possible = max_possible ** 0.5
+        return min(1.0, total_stress / sqrt_max_possible)
 
     def compare_multilayer_vs_monolayer(
         self,

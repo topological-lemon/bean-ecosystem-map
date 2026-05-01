@@ -13,7 +13,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 6
+    "globi_record_count": 6,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0002",
@@ -29,7 +30,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0003",
@@ -45,7 +47,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0004",
@@ -61,7 +64,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0005",
@@ -77,7 +81,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 26
+    "globi_record_count": 26,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0006",
@@ -93,7 +98,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0007",
@@ -109,7 +115,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 16
+    "globi_record_count": 16,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0008",
@@ -125,7 +132,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 40
+    "globi_record_count": 40,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0009",
@@ -141,7 +149,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 8
+    "globi_record_count": 8,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0010",
@@ -157,7 +166,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0011",
@@ -173,7 +183,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0012",
@@ -189,7 +200,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 4
+    "globi_record_count": 4,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0013",
@@ -205,7 +217,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 8
+    "globi_record_count": 8,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0014",
@@ -221,7 +234,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 36
+    "globi_record_count": 36,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0015",
@@ -237,7 +251,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 8
+    "globi_record_count": 8,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0016",
@@ -253,7 +268,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 40
+    "globi_record_count": 40,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0017",
@@ -269,7 +285,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0018",
@@ -285,7 +302,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 22
+    "globi_record_count": 22,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0019",
@@ -301,7 +319,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0020",
@@ -317,7 +336,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0021",
@@ -333,7 +353,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0022",
@@ -349,7 +370,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0023",
@@ -365,7 +387,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0024",
@@ -381,7 +404,8 @@
     "notes": "GloBI-derived. Original source: (no citation supplied by GloBI). Verify against primary literature before relying on for keystone claims.",
     "provenance": "globi",
     "globi_study_citation": "",
-    "globi_record_count": 2
+    "globi_record_count": 2,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0025",
@@ -397,7 +421,8 @@
     "notes": "Quantitative dispersal kernel 52ha female 17ha male; gut transit 70-86h",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0026",
@@ -413,7 +438,8 @@
     "notes": "Tarszisz quantitative kernel for Sabangau orangutan-fig dispersal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0027",
@@ -429,7 +455,8 @@
     "notes": "Tarszisz 2017 confirms gut-passed Palaquium seeds viable",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0028",
@@ -445,7 +472,8 @@
     "notes": "Diospyros seeds in orangutan faeces with retained viability",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0029",
@@ -461,7 +489,8 @@
     "notes": "Punak large-seeded peat tree dispersed by orangutans",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0030",
@@ -477,7 +506,8 @@
     "notes": "Partial dispersal role; most Shorea dispersal is gravity/wind",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0031",
@@ -493,7 +523,8 @@
     "notes": "Large-gape disperser kernel exceeds 10km",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0032",
@@ -509,7 +540,8 @@
     "notes": "Hornbill dispersal of Sundaland figs",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0033",
@@ -525,7 +557,8 @@
     "notes": "Large-seeded Palaquium accessible to large-gape hornbills",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0034",
@@ -541,7 +574,8 @@
     "notes": "Diospyros size compatible with hornbill dispersal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0035",
@@ -557,7 +591,8 @@
     "notes": "Pied hornbill smaller-gape disperser for small-medium figs",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0036",
@@ -573,7 +608,8 @@
     "notes": "Pied hornbill fig dispersal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0037",
@@ -589,7 +625,8 @@
     "notes": "Gibbon dispersal kernel ~1-2km",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0038",
@@ -605,7 +642,8 @@
     "notes": "Gibbon-fig dispersal documented across Bornean range",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0039",
@@ -621,7 +659,8 @@
     "notes": "Gibbon-fig dispersal documented across Bornean range",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0040",
@@ -637,7 +676,8 @@
     "notes": "Flying fox dispersal kernel exceeds 50km",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0041",
@@ -653,7 +693,8 @@
     "notes": "Flying fox fig dispersal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0042",
@@ -669,7 +710,8 @@
     "notes": "Flying fox fig dispersal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0043",
@@ -685,7 +727,8 @@
     "notes": "Apis dorsata is primary canopy pollinator for Bornean dipterocarps",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0044",
@@ -701,7 +744,9 @@
     "notes": "Apis dorsata documented as ramin pollinator",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0045",
@@ -717,7 +762,8 @@
     "notes": "Generalist Apis dorsata pollination of canopy peat trees",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0046",
@@ -733,7 +779,8 @@
     "notes": "Apis dorsata pollinates emergent peat tree species",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0047",
@@ -749,7 +796,8 @@
     "notes": "Jelutong pollination by giant honeybee",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0048",
@@ -765,7 +813,8 @@
     "notes": "Generalist canopy pollination by Apis dorsata",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0049",
@@ -781,7 +830,9 @@
     "notes": "Obligate fig-fig wasp mutualism",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0050",
@@ -797,7 +848,9 @@
     "notes": "Obligate fig-fig wasp mutualism",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0051",
@@ -813,7 +866,9 @@
     "notes": "Obligate fig-fig wasp mutualism",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0052",
@@ -829,7 +884,9 @@
     "notes": "Dipterocarpaceae are obligately ectomycorrhizal",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0053",
@@ -845,7 +902,9 @@
     "notes": "Ramin depends on mycorrhizal associations in nutrient-poor peat",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0054",
@@ -861,7 +920,8 @@
     "notes": "Punak seedlings depend on mycorrhizal networks",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0055",
@@ -877,7 +937,9 @@
     "notes": "Tumih mycorrhizal dependence in nutrient-poor peat substrate",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "obligate": true,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0056",
@@ -893,7 +955,8 @@
     "notes": "Jelutong mycorrhizal facilitation",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0057",
@@ -909,7 +972,8 @@
     "notes": "Sapotaceae mycorrhizal associations in peat habitat",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0058",
@@ -925,7 +989,8 @@
     "notes": "Large strangler figs provide hornbill nesting cavities",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0059",
@@ -941,7 +1006,8 @@
     "notes": "Strangler fig cavity-nest sites for pied hornbill",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0060",
@@ -957,7 +1023,8 @@
     "notes": "Tumih is frequent nest tree for Sabangau orangutans",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0061",
@@ -973,7 +1040,8 @@
     "notes": "Balangeran among preferred Sabangau orangutan nest tree species",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "positive"
   },
   {
     "id": "int_0062",
@@ -989,7 +1057,8 @@
     "notes": "False gharial may take pigs at water",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0063",
@@ -1005,7 +1074,8 @@
     "notes": "Long-tailed macaques use river edges and are vulnerable",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0064",
@@ -1021,7 +1091,8 @@
     "notes": "Tumih leaves in folivory data during low-fruit periods",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0065",
@@ -1037,7 +1108,8 @@
     "notes": "Red leaf monkey is folivorous; tumih is major peat tree",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0066",
@@ -1053,7 +1125,8 @@
     "notes": "Sunda colugo is folivorous; tumih provides accessible canopy foliage",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   },
   {
     "id": "int_0067",
@@ -1069,6 +1142,7 @@
     "notes": "Banded civet diet includes invertebrates and honeybee predation",
     "provenance": "curated",
     "globi_study_citation": "",
-    "globi_record_count": null
+    "globi_record_count": null,
+    "effect_on_target": "negative"
   }
 ]
